@@ -1,0 +1,55 @@
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .view-display{
+	 display:none !important;
+
+}
+.mycolor{
+	color:red;
+}
+}
+
+@media screen and (min-width: 601px) and (max-width: 750px) {
+  .view-display1{
+	 display:none !important;
+}
+.mycolor{
+	color:blue;
+}
+}
+.bg1{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

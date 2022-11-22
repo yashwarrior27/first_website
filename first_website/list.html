@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+  <script> cx
+      function hello(){
+         let a= prompt("what is your name");
+        let b= confirm("your name is "+a + "?");
+         if(b){
+         alert("ok your name is "+a);
+         }
+         else{
+             alert("enter your name again.");
+         }
+      }
+      function yah(){
+        let el=document.getElementById("kl").value;
+        let num=0;
+        for(let i=0;i<=el;i++){
+          num=i;
+          console.log(i);
+             document.getElementById("qw").innerHTML="<p>"+i+"</p>";
+        }
+      }
+      function even(){
+       let a= document.getElementById("kl").value;
+       let text="";
+        if(a%2==0){
+          for(let i=1; i<=a;i++){
+            if(i%2==0){
+              text=text+i+" ";
+            }
+          }
+          document.getElementById("er").innerHTML=text;
+        }
+        else{
+          alert("this is not an even number");
+        }
+      }
+      function odd(){
+       let a= document.getElementById("kl").value;
+       let text="";
+        if(a%2!=0){
+          for(let i=1; i<=a;i++){
+            if(i%2!=0){
+              text=text+i+" ";
+            }
+          }
+          document.getElementById("er").innerHTML=text;
+        }
+        else{
+          alert("this is not an odd number");
+        }
+      }
+      
+     function colw(){
+       document.getElementById("ptageq").style.color="red";
+       document.querySelector("#ptageq").style.background="black";
+     }
+     function abcde(){
+
+       let text=" ";
+       let n=document.getElementById("abc").value;
+       if(n<=26&&n>=1){
+       let alpha="abcdefghijklmnopqrstuvwxyz";
+        for(let i=0;i<n;i++){
+          text=text+alpha[i]+" ";
+        }
+       document.getElementById("deq").innerHTML=text;
+      }
+      else{
+        document.getElementById("deq").innerHTML="ENTER THE CORRECT NUMBER";
+        
+      }
+     }
+     function car(){
+       document.getElementById("xas").innerHTML="bmw <br> audi   <br> maruti";
+     }
+     document.getElementById("tryit").addEventListener("click", okb);
+     function okb(){
+       alert("hello");
+     }
+     function sor(){
+   let a=[1,3,4,6,8,4,9,2];
+   let b=a.sort();
+   let c=["a","x","b","k"];
+   let k=c.sort();
+   console.log(k);
+   console.log(b);
+
+     }
+     function srt(){
+       let a=[8,1,2,5,6,3]
+        for(let i=0; i<a.length-1;i++){
+          for( let j=0; j<a.length-i-1;j++){
+            if(a[j]>a[j+1]){
+              let temp=a[j];
+              a[j]=a[j+1];
+              a[j+1]=temp;
+            }
+          }
+        }
+        console.log(a);
+     }
+     function age(){
+       let a = [12,18,20,2,25,27];
+       let b = a.filter(function(next){
+         return next >= 18;
+       });
+       console.log(b);
+     }
+     function obj(){
+       let text="";
+       let a={
+         "name":"yash",
+         "age":18,
+         "degree":"bca",
+         "city":"jaipur"
+       }
+      for(let i in a){
+        text += i+" "+ a[i] + "<br>";
+        console.log(i);
+        
+      }
+      document.getElementById("objecti").innerHTML=text;
+     }
+  </script>   
+</head>
+<body>
+    <ul>
+        <li>banana</li>
+        <li>banana</li>
+        <li>banana</li>
+         <li>banana</li>
+    </ul>
+    <table  style="background-color: greenyellow; color: black; height: 50px;">
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro  comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>  
+      </table>
+      <input type="text" value="nae" placeholder="what is your name" id="on">
+      <button onclick="hello();" id="on"> click me </button>
+       
+      <input type="number" id="kl">
+      <button onclick="even()" >even</button>
+      <button onclick="odd()">odd</button>
+      <p id="er"></p>
+      <p id="ptageq">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cupiditate mollitia, voluptatem et quasi dolorem eius expedita eos asperiores commodi ad aut fuga optio excepturi beatae impedit repellat quisquam possimus?</p>
+      <button onclick="colw()">color</button>
+      <input type="number"  id="abc">
+      <button onclick="abcde()">alphabate</button>
+      <p id="deq"></p>
+      <button onclick="car()">print car name</button>
+      <p id="xas"></p>
+      <button id="myBtn" onclick="sor()">sort</button>
+      <button onclick="srt()">bubble sort</button>
+   <button onclick="age()">find</button>
+   <button onclick="obj()">object</button>
+   <p id="objecti"></p>
+</body>
+</html> 

@@ -1,0 +1,203 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="new-project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
+    <style>
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+        .dropdown-menu{
+            margin-top: 0;
+        }
+    </style>
+</head>
+<script>
+    $(document).ready(function(){
+    $(".dropdown").hover(function(){
+        var dropdownMenu = $(this).children(".dropdown-menu");
+        if(dropdownMenu.is(":visible")){
+            dropdownMenu.parent().toggleClass("open");
+        }
+    });
+});     
+
+    function togi(){
+        document.getElementById("toge").classList.toggle("toggi");
+        document.getElementById("datat").classList.toggle("col-lg-12");
+        document.getElementById("datat").classList.toggle("col-md-12");
+        document.getElementById("datat").classList.toggle("col-sm-12");
+        document.getElementById("datat").classList.toggle("col-12");
+        document.getElementById("s0").classList.toggle("d-none");
+        document.getElementById("s1").classList.toggle("d-none");
+        document.getElementById("s2").classList.toggle("d-none");
+        document.getElementById("s3").classList.toggle("d-none");
+        document.getElementById("s4").classList.toggle("d-none");
+        document.getElementById("s5").classList.toggle("d-none");
+        document.getElementById("img2").classList.toggle("d-block")
+        document.getElementById("datat1").classList.toggle("pad0");
+        document.getElementById("dash-content").classList.toggle("mar5");
+    }
+</script>
+<body class="bg-light">
+    <div class="container-fluid ">
+        <div class="row justify-content-end">
+            <div class="col-5 col-sm-4  col-md-3 col-lg-2 toogleer bg14" id="toge" style="z-index: 5;" > 
+                <div class="row  ">
+                    <div class="col-12 bg-success text-center rounded-left " style="padding-top: 12px; padding-bottom: 12px;">
+                        <a class="navbar-brand text-white m-0 p-0" style="font-size: 25px;" href="#">
+                            <img src="Subodh_College_Logo.jpg" class="img-fluid img2" alt=""> <span id="s0">College</span></a>
+                    </div>
+                   
+                        <div class="col-12 pt-3 px-0 ">
+                            <div class="list-group border-0" style="font-size: 25px;">
+                                <a href="dash-board.html" class="list-group-item list-group-item-action bg-transparent  border-0 text-white padleft ho acti"  aria-current="true">
+                                    <i class="fa fa-desktop text-white" aria-hidden="true" > </i>  <span id="s1">Dashbord</span>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 text-white padleft ho"> <i class="fa fa-home" aria-hidden="true"></i> <span id="s2">Home</span></a>
+                                <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 text-white padleft ho"> <i class="fa fa-book" aria-hidden="true"></i> <span id="s3">courses</span></a>
+                                <a href="#" class="list-group-item list-group-item-action bg-transparent  border-0 text-white padleft ho"> <i class="fa fa-rss" aria-hidden="true"></i> <span id="s4">classes</span></a>
+                                <a href="#" class="list-group-item list-group-item-action bg-transparent  border-0 text-white padleft ho"> <i class="fa fa-address-book" aria-hidden="true"></i> <span id="s5">Attendence</span></a>
+                              </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class=" col-7 col-sm-8 col-md-9 col-lg-10 " id="datat">
+              <div class="row bg-success    pt-1 pb-2  rounded-right" id="datat1">
+                  <div class="col-4 col-sm-7 col-md-7 col-lg-9 pr-0 ">
+                      <ul class="nav pt-1" >
+                        <img src="Subodh_College_Logo.jpg" class="img-fluid img2 d-none" id="img2" style="margin-top: 10px;
+                        margin-right: 16px;" alt=""> 
+                        <button class="btn btn-white" style="font-size: 25px;"  onclick="togi()"><i class="fa fa-bars text-white" aria-hidden="true"></i></button>
+                        <li class="nav-item dropdown d-none d-sm-block">
+                            <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" style="font-size: 20px;"  aria-expanded="false">Create New</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                            </li>
+                            <li class="nav-item dropdown d-none d-md-block">
+                                <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" style="font-size: 20px;"   href="#" role="button" aria-expanded="false">Menu</a>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                          </li>
+                          <li class="nav-item pt-2 d-none d-lg-block">
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-1" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                              </form>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-8 col-sm-5 col-md-5 col-lg-3 pr-0 pl-0 ">
+                      <ul class="nav justify-content-center pt-2" style="font-size: 30px;">
+                        <li class="nav-item dropdown dropleft ">
+                            <a class="nav-link pl-0" data-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa fa-language text-white" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                      </li>
+                        <li class="nav-item dropdown dropleft">
+                            <a class="nav-link dropdown-toggle text-white p-0" data-toggle="dropdown" style="font-size: 25px;"   href="#" role="button" aria-expanded="false"><img src="img-1.jpg"  class="img-fluid img1" alt=""></a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                      </li>
+                      <li class="nav-item d-none d-md-block">
+                        <a class="nav-link text-white" href="#"><i class="fa fa-square-o" aria-hidden="true"></i></a>
+                      </li>
+                    <li class="nav-item dropdown dropleft">
+                        <a class="nav-link pl-0 pr-0 " data-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa fa-bell text-white" aria-hidden="true"></i></a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                  </li>
+                  
+                      </ul>
+                  </div>
+              </div>
+              <div class="row justify-content-center mt-3" id="dash-content">
+                <div class="col-9 col-sm-7 col-md-5 col-lg-3   bg-white shadow p-3 mb-5  rounded  mr-3">
+                    <div class="row">
+
+                        <div class="col-6">
+                            <a href="#">
+                         <img src="achievement-svgrepo-com.svg" alt=""></a>
+                        </div>
+                        <div class="col-6 text-center">
+                            <h4 class="pt-3 ">01</h4>
+                            <a href="#" class="xy">
+                           <h6 class="text-muted text-break ">Achivements</h6>
+                            </a>
+                        </div>
+                  </div>
+              </div>
+              <div class="col-9 col-sm-7 col-md-5 col-lg-3   bg-white shadow p-3 mb-5  rounded  mr-3">
+                <div class="row">
+
+                    <div class="col-6">
+                        <a href="#">
+                     <img src="goal-success-svgrepo-com.svg"  alt=""></a>
+                    </div>
+                    <div class="col-6 text-center">
+                        <h4 class="pt-3">02</h4>
+                        <a href="#">
+                       <h6 class="text-muted text-break">Goals</h6>
+                        </a>
+                    </div>
+              </div>
+          </div>
+                  <div class="col-9 col-sm-7 col-md-5 col-lg-3   bg-white shadow p-3 mb-5  rounded  mr-3">
+                    <div class="row">
+
+                        <div class="col-6">
+                            <a href="#">
+                         <img src="books-book-svgrepo-com.svg" alt=""></a>
+                        </div>
+                        <div class="col-6 text-center">
+                            <h4 class="pt-3">03</h4>
+                            <a href="#">
+                           <h6 class="text-muted text-break ">Courses</h6>
+                            </a>
+                        </div>
+                  </div>
+              </div>
+                 
+              <div class="col-9 bg-white shadow p-3 mb-5  rounded">
+                  <h4 class="text-muted">Bar-Chart</h4>
+                  <img src="Bar-Chart-PNG-Pic.png" class="img-fluid" alt="">
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
